@@ -15,6 +15,12 @@ export default function App() {
   const [image, setImage] = useState();
 
   return (
+  <div style={{ 
+      textAlign: "center", 
+      marginBottom: 12, 
+      maxHeight: "100vh", // Set maximum height to viewport height
+      overflow: "auto"     // Allow scrolling if content exceeds viewport height
+    }}>
     <InferenceContext.Provider value={apiInfo}>
       <div style={{ textAlign: "center", marginBottom: 12 }}>
         <img
@@ -29,5 +35,6 @@ export default function App() {
         Powered by <b>NoMindBhutan</b>
       </p>
     </InferenceContext.Provider>
+  </div>
   );
 }
