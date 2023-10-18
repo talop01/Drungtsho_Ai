@@ -18,8 +18,7 @@ export default function App() {
   <div style={{ 
       textAlign: "center", 
       marginBottom: 12, 
-      maxHeight: "100vh", // Set maximum height to viewport height
-      overflow: "auto"     // Allow scrolling if content exceeds viewport height
+      maxHeight: "100vh"
     }}>
     <InferenceContext.Provider value={apiInfo}>
       <div style={{ textAlign: "center", marginBottom: 12 }}>
