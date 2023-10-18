@@ -15,13 +15,6 @@ export default function App() {
   const [image, setImage] = useState();
 
   return (
-  <div style={{
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "100vh"
-}}>
     <InferenceContext.Provider value={apiInfo}>
       <div style={{ textAlign: "center", marginBottom: 12 }}>
         <img
@@ -36,6 +29,5 @@ export default function App() {
         Powered by <b>NoMindBhutan</b>
       </p>
     </InferenceContext.Provider>
-  </div>
   );
 }
